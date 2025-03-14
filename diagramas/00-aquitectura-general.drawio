@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram id="EtLTi3U-rrUko0sgVtis" name="Arquitectura">
+        <mxGraphModel dx="2988" dy="2478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;p dir=&quot;ltr&quot;&gt;&lt;span style=&quot;color: rgb(38, 88, 128);&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Helvetica&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;ORQUESTADOR DE ESTRATEGIA&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 10pt; background-color: transparent;&quot;&gt;Orquesta el pipeline de todos los activos asociados a una estrategia. Backtest, Validation y Optimization.&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Verdana;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="-30" y="30" width="370" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="3" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;p style=&quot;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;color: rgb(26, 26, 26);&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;MS INFO ESTRATEGIA&lt;/font&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent;&quot;&gt;Indica la estrategia, propiedades y la relación con los activos&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontFamily=Verdana;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="350" width="520" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="5" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;p dir=&quot;ltr&quot;&gt;&lt;span style=&quot;color: rgb(75, 75, 75);&quot;&gt;&lt;font style=&quot;&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;MS ANALIZADOR DE ESTRATEGIA&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 10pt;&quot;&gt;Calcula otros indicadores como carg, tabla de resultados y simulación de monte Carlo&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Verdana;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="-290" width="520" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="170" as="sourcePoint"/>
+                        <mxPoint x="290" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="12" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;p dir=&quot;ltr&quot; style=&quot;text-align: center&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;color: rgb(38, 88, 128);&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;MS BACKTESTER&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;DE ESTRATEGIA&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent;&quot;&gt;Prueba la estrategia a partir de parametros y guarda con un registro con los resultados del equity curve. El backtesting es de eventos con el framework jesse&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Verdana;fontSize=12;fontColor=default;fillColor=default;fillStyle=auto;glass=0;shadow=1;strokeWidth=1;perimeterSpacing=0;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="5" width="520" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;p dir=&quot;ltr&quot; style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;color: rgb(75, 75, 75);&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Helvetica&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;MS PAGINA WEB&lt;/font&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 10pt; background-color: transparent;&quot;&gt;Se podrá visualizar el historial de todas las estrategias, su estado y sus análisis.&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=0;fillStyle=auto;strokeColor=default;strokeWidth=1;align=center;verticalAlign=top;fontFamily=Verdana;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="1655" y="5" width="470" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.bairesdev.com/wp-content/uploads/2021/08/PostgreSQL-2.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1016" y="426.16" width="130" height="81.68" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://revolucionatupyme.com/wp-content/uploads/2024/08/n8n-1024x410.png;" vertex="1" parent="1">
+                    <mxGeometry x="81.5" y="120.00000000000003" width="147" height="58.86" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png;" vertex="1" parent="1">
+                    <mxGeometry x="720.84" y="-220" width="111.01" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://pontia.tech/wp-content/uploads/2023/06/Python-Symbol_0-1024x576.png;" vertex="1" parent="1">
+                    <mxGeometry x="725.19" y="-160" width="106.66" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://pmorissette.github.io/ffn/_static/logo.png;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="-230" width="150" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="105" width="111.01" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://pontia.tech/wp-content/uploads/2023/06/Python-Symbol_0-1024x576.png;" vertex="1" parent="1">
+                    <mxGeometry x="730.84" y="160" width="69.33" height="39" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://docs.jesse.trade/imgs/w-01.png;" vertex="1" parent="1">
+                    <mxGeometry x="876.5" y="120.5" width="77" height="78.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:1024/1*doAg1_fMQKWFoub-6gwUiQ.png;" vertex="1" parent="1">
+                    <mxGeometry x="1070" y="-197.5" width="85" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.bairesdev.com/wp-content/uploads/2021/08/PostgreSQL-2.svg;" vertex="1" parent="1">
+                    <mxGeometry x="990" y="117.32000000000002" width="130" height="81.68" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png;" vertex="1" parent="1">
+                    <mxGeometry x="720.84" y="442.71999999999997" width="111.01" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://pontia.tech/wp-content/uploads/2023/06/Python-Symbol_0-1024x576.png;" vertex="1" parent="1">
+                    <mxGeometry x="860" y="426.16" width="130" height="73.13" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://pontia.tech/wp-content/uploads/2023/06/Python-Symbol_0-1024x576.png;" vertex="1" parent="1">
+                    <mxGeometry x="1715" y="113.86" width="159.98" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://media.datacamp.com/legacy/v1727712679/image_0dd3c66c35.png;" vertex="1" parent="1">
+                    <mxGeometry x="1885" y="98.55999999999999" width="180" height="105.3" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
